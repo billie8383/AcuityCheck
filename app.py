@@ -74,6 +74,11 @@ def ui_models_panel(model_path: Path):
     else:
         st.warning("YuNet model not found. Run scripts/download_models.sh")
 
+def ui_logo():
+    left, mid, right = st.columns([1,1,1])
+    with mid:
+        st.image("static/logo.png", use_container_width=True)
+
 
 def build_chart_lines(chart_style: str, denominators: list[int], single_letter: str = "A") -> list[str]:
     """
@@ -110,7 +115,6 @@ def build_chart_lines(chart_style: str, denominators: list[int], single_letter: 
         letters = "".join(base_letters[(j + i) % len(base_letters)] for j in range(n))
         lines.append(letters)
     return lines
-
 
 def sidebar_settings():
     st.sidebar.header("Settings")
@@ -243,19 +247,12 @@ def render_chart(letter_px_sizes, letters_per_line, *, show_labels, polarity, le
         st.markdown("</div>", unsafe_allow_html=True)
 
 
-def ui_logo():
-    left, mid, right = st.columns([1,2,1])
-    with mid:
-        st.image("static/logo.png", width=True)
-
 
 # ---------- main ----------
 def main():
     st.set_page_config(page_title=TITLE, layout="centered")
     ui_intro()
  
-
-
     # Sidebar “dropdown” settings
     S = sidebar_settings()
 
@@ -266,7 +263,6 @@ def main():
     # Model presence panel (short)
     models_ready = YUNET_PATH.exists()
 
-  
  
     # TABS = steps
     tab1, tab2, tab3 = st.tabs(["Step 1. Card calibration", "Step 2. Detection & calibration", "Step 3. Chart"])
