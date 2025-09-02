@@ -1,11 +1,15 @@
 <p align="center">
-  <img src="static/logo.png" alt="healthkit-etl logo" width="160"/>
+  <img src="static/logo.png" alt="acuitycheck logo" width="160"/>
 </p>
 
 *Indicative only - not a medical device.*
 
 AcuityCheck is a web app that turns your webcam and screen into an **interactive visual acuity tester**.
 It uses **computer vision** to estimate your **eye–screen distance** and then dynamically scales a **Snellen chart** (Sloan or Classic) to the correct physical size.
+
+<p align="center">
+  <img src="static/demo.gif" alt="acuitycheck demo",  width="500"/>
+</p>
 
 
 ## ✨ Features
@@ -50,11 +54,7 @@ This will fetch:
 ## 🚀 Usage
 
 Run the app with:
-
-```bash
-streamlit run app.py
-```
-or 
+ 
 ```bash
 docker compose up --build 
 ```
