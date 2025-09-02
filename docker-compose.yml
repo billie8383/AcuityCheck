@@ -1,0 +1,23 @@
+services:
+  acuitycheck:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        PY_VER: "3.11"       
+    container_name: acuitycheck
+    ports:
+      - "8501:8501"           
+    environment:
+      STREAMLIT_SERVER_HEADLESS: "true"
+      STREAMLIT_BROWSER_GATHER_USAGE_STATS: "false"
+      PYTHONUNBUFFERED: "1"
+    # For development: live-reload the app & persist models
+    volumes:
+      - ./:/app
+      - ./models/onnx:/app/models/onnx
+    command: >
+      streamlit run app.py
+      --server.port=8501
+      --server.address=0.0.0.0
+    restart: unless-stopped

@@ -11,7 +11,7 @@ mkdir -p "$DEST_DIR"
 echo "Downloading YuNet face detector (ONNX)…"
 curl -fsSL -o "$DEST_DIR/face_detection_yunet_2023mar.onnx" \
   https://github.com/opencv/opencv_zoo/raw/main/models/face_detection_yunet/face_detection_yunet_2023mar.onnx
-echo "✓ YuNet saved to $DEST_DIR/face_detection_yunet_2023mar.onnx"
+echo "YuNet saved to $DEST_DIR/face_detection_yunet_2023mar.onnx"
 
 echo "Done. Files placed in: $DEST_DIR"
 
