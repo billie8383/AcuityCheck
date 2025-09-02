@@ -1,5 +1,4 @@
 # -------- AcuityCheck Dockerfile (CPU) --------
-# Build args let you switch Python easily: 3.10 / 3.11 / 3.12
 ARG PY_VER=3.11
 FROM python:${PY_VER}-slim AS app
 
@@ -17,21 +16,20 @@ ENV PYTHONDONTWRITEBYTECODE=1 \
 
 WORKDIR /app
 
-# Install Python deps first (better caching)
+# Install Python deps  
 COPY requirements.txt .
 RUN pip install -r requirements.txt
 
 # Copy the rest of the app
 COPY . .
 
-# Fetch ONNX models at build time (ok if URLs change/mirror unavailable)
-# Do not fail the build if a model URL 404s; the app already warns.
+# Fetch ONNX models at build time 
 RUN chmod +x scripts/download_models.sh && \
     ./scripts/download_models.sh || true
 
 EXPOSE 8501
 
-# Lightweight healthcheck (Streamlit exposes this endpoint)
+# Lightweight healthcheck 
 HEALTHCHECK --interval=30s --timeout=3s --start-period=20s --retries=3 \
   CMD curl -fsS http://localhost:8501/_stcore/health || exit 1
 
